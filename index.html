@@ -4,39 +4,60 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>The Hound-About | Eastside Cafe and Dog Park</title>
-    <link href="https://fonts.googleapis.com/css?family=Carter+One|Questrial|Shadows+Into+Light+Two" rel="stylesheet">
+    
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    
+    <!-- Local Stylesheets -->
     <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
     <link rel="stylesheet" type="text/css" href="styles/normalize.css">
-    <script src="https://use.fontawesome.com/edf3214645.js"></script>
     
-    <!<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Carter+One|Questrial|Shadows+Into+Light+Two" rel="stylesheet">
+    <script src="https://use.fontawesome.com/edf3214645.js"></script>
+    <title>The Hound-About | Eastside Cafe and Dog Park</title>
   </head>
   
   <body>
+    <div class="container">
     <header>
-      <h1>The Hound-About</h1>
-      <nav>
-        <ul class="nav nav-pills">
-          <li role="presentation" class="active"><a href="index.html">Home</a></li>
-          <li role="presentation"><a href="about.html">About Us</a></li>
-          <li role="presentation"><a href="menu.html">Cafe Menu</a></li>
-          <li role="presentation"><a href="park.html">About the Park</a></li>
-          <li role="presentation"><a href="events.html">Events</a></li>
-        </ul>
-      </nav>
-    </header>
   
-    <main>
+    </header>
+    
+  <nav class="navbar navbar-default">
+    <div class="container=fluid">
+    <!-- Mobile display grouping -->
+    <div class="navbar-header">
+      <div class="container-fluid">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+          <a class="navbar-brand" href="#">The Houndabout</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="index.html">Home<span class="sr-only">(current)</span></a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="menu.html">Cafe Menu</a></li>
+            <li><a href="park.html">About the Park</a></li>
+          </ul>
+        </div>            
+      </div>
+    </nav>
+  
+    <main class="container">
+  
       <section class="col-xs-12">
-      <div class="item-container row">
-        <div class="item col-xs-12 col-sm-6 col-md-6">
-          <div class="thumbnail">
-          <a href="about.html">
+        <div class="container-fluid">
+        <div class="item col-xs-12 col-sm-6 col-md-4">
+          <div class="row">
+          <a href="about.html" class="thumbnail">
           <h2 class="item-header">About Us</h2>
             <img srcset="images/happy-dogs-alt-800w.jpg 800w, images/happy-dogs-alt-400w.jpg 400w"
                 sizes="(min-width: 1280px) 370px (max-width: 1006px) 800px"
@@ -46,9 +67,9 @@
           </div>
         </div>
             
-        <div class="item col-xs-12 col-sm-6 col-md-6">
-          <div class="thumbnail">
-            <a href="menu.html">
+        <div class="item col-xs-12 col-sm-6 col-md-4">
+          <div class="row">
+            <a href="menu.html" class="thumbnail">
             <h2 class="item-header">Our Menu</h2>
               <img srcset="images/coffee_house_800w.jpg 800w, images/coffee_house_400w.jpg 400w"
                   sizes="(min-width: 1280px) 370px (max-width: 1006px) 800px"
@@ -57,10 +78,11 @@
             </a>
           </div>
         </div>
-        
-        <div class="item col-xs-12 col-sm-6 col-md-6">
-          <div class="thumbnail">
-            <a href="park.html">
+    
+      
+        <div class="item col-xs-12 col-sm-6 col-md-4">
+          <div class="row">
+            <a href="park.html" class="thumbnail">
             <h2 class="item-header">About the Park</h2>
               <img srcset="images/park-puppy-800w.jpg 800w, images/park-puppy-400w.jpg 400w"
                   sizes="(min-width: 1280px) 370px (max-width: 1006px) 800px"
@@ -68,47 +90,36 @@
                   alt="Happy Jack Russel">
             </a>
           </div>
-        </div>
-        
-        <div class="item col-xs-12 col-sm-6 col-md-6">
-          <div class="thumbnail">
-            <a href="events.html">
-            <h2 class="item-header">Events</h2>
-              <img srcset="images/dog-walk-800w.jpg 800w, images/dog-walk-400w.jpg 400w"
-                  sizes="(min-width: 1280px) 370px (max-width: 1006px) 800px"
-                  src="images/dog-walk-800w.jpg"
-                  alt="Puppy Walk">
-            </a>
-          </div>
-        </div>
-        
-        
+        </div>  
       </div>
-      </section>
+      
+      <p class="home-text">Spill litter box, scratch at owner, destroy all furniture, especially couch wake up wander around the house making large amounts of noise jump on top of your human's bed and fall asleep again and pose purrfectly to show my beauty spill litter box, scratch at owner, destroy all furniture, especially couch. Scream at teh bath hunt anything that moves. Hide when guests come over. Claw drapes leave fur on owners clothes. </p>
+
+      </section>  
     </main>
     
-    <footer class="footer">
-      <div class="container">
-        <ul class="contact">
-          <li><h4>Address:</h4>4050 Fall City-Carnation Road Southeast, Fall City, WA 98024</li>
-          <li><h4>Phone:</h4>(425) 555-1212</li>
-          <li><h4 class="emailUs"><a href="mailto:houndabout@gmail.com">E-Mail Us</a></h4></li>
-        </ul>
-      
-        <ul class="social">
-          <li><a href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
-          <li><a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter"></i></a></li>
-          <li><a href="https://www.google.com" target="_blank"><i class="fa fa-google-plus-official" aria-hidden="true" target="_blank"></i></a></li>
-          <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
-        </ul>
-      </nav>
-      </div>
-    </footer>
-  
     
-     <!-- Latest compiled and minified JavaScript -->
+    <footer class="footer">
+      <nav class="navbar navbar-default">
+      <div class="text-center">
+            <h4>Where to Find Us!</h4>
+              <ul class="nav social text-center">
+                <li><a href="http://www.twitter.com"><i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i></a></li>
+                <li><a href="http://www.instagram.com"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a></li>
+                <li><a href="http://www.linkedin.com"><i class="fa fa-linkedin fa-3x" aria-hidden="true"></i></a></li>
+                <li><a href="https://goo.gl/maps/4Y9gsLiWhZ22"><i class="fa fa-car fa-3x" aria-hidden="true"></i></a></li>
+              </ul>
+              <p class="footertext">&copy;&nbsp;2017 Elyse Masterson</p>
+        </div>
+        </nav>
+      </div>
+    </footer>  
+  
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="script.js"></script>
+    </div>
   </body>
 </html>
 

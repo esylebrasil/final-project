@@ -1,257 +1,119 @@
-html {
-  font-size: 1em; 
-  height: 100%; 
-  box-sizing: border-box; 
-  text-decoration: none; 
+.clearfix:after {
+  display: block; 
+  clear: both; 
 }
 
-body {
-  position:  relative; 
+/* Start Footer Styles */
+
+.footer { 
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  height: 10rem;
+  background-color: #4c4c4c;
+  background-size: cover;
+  padding: 0 0 30px 0;
+  border-top: .5rem solid #5CC7D0;
+  text-align: center;
+  display: block;
+  align-content:  center;
+}
+
+.footer p { padding: 1rem 0rem 2rem; }
+
+footer a { color: white; }
+
+
+ul.social li a:hover {
+  color: #0e2f32; 
+  width: auto; 
+  background-color: #5CC7D0; 
+}
+
+ul.social {
+  list-style-type: none; 
   margin: 0; 
-  padding-bottom: 6rem; 
-  min-height: 100%; 
-  font-family: 'Shadows Into Light Two', cursive;
-  font-family: 'Carter One', cursive;
-  font-family: 'Questrial', sans-serif;
+  padding: 0 .3em; 
+  overflow: hidden; 
+  display: inline-block; 
+}
+
+ul.social li { float: left; }
+
+ul.social li a {
+  display: inline-block; 
+  padding .5em .3em; 
+  text-decoration: none; 
+  text-align: center; 
+  color: #4c4c4c; 
 }
 
 /* Start Header Styles */
 
-header { 
-  background-color: #5CC7D0; 
-  position: fixed;
-  left: 0; 
-  right: 0; 
-  top: 0; 
-  height: 5em; 
-  z-index: 999; 
+.navbar-brand {
   font-family: 'Carter One', cursive;
+  font-size: 2em; 
+  background: -webkit-linear-gradient(#0e2f32, #5CC7D0); 
+              -webkit-background-clip: text; 
+              -webkit-text-fill-color:  transparent; 
+  width: auto; 
 }
 
-h1 {
-  font-size: 2rem; 
-  margin-left: 5rem; 
-  margin-top: 0.5rem; 
-  margin-bottom: 2rem;
-  padding-left: 2.2em; 
-  color: #48484A; 
-  font-variant: small-caps; 
-  font-family: 'Carter One', cursive;
+/* Start Nav bar Styles */
+.navbar-header {
+  width: 100%; 
+  display: inline-flex;  
+  
 }
 
-/* Start Navigation Styles */
-
-nav {
-  margin-left: 60%; 
-  margin-top: -5rem;
+.navbar-default .navbar-nav > .active a {
+  color: #fff !important;  
+  background: #0e2f32 !important;  
 }
 
-nav ul {
-  font-size: 1.5rem; 
-  color: #48484A; 
-  list-style-type: none; 
-  margin: 0; 
-  margin-right: 3.5rem; 
-  clear: right; 
-  display: flex; 
-  justify-content: space-around; 
+.nav-default .navbar-nav > .active > a, 
+.nav-default .navbar-nav > .active > a:hover, 
+.nav-default .navbar-nav > .active > a:focus {
+  color: #0e2f32; 
+  background: #5CC7D0; 
 }
 
-nav a {
-  text-decoration: none; 
-  color: #48484A; 
+ul.navbar-nav a:hover {
+  color: #fff !important; 
+  background-color: #5CC7D0 !important; 
 }
 
-nav a:hover { 
-  color: #0a2123; 
-  text-decoration: none; 
+header {
+  margin-bottom: 1rem;
 }
-
-/*
-.current-page {
-  color: #0a2123; 
-  font-weight: bolder; 
-}
-
 
 /* Start Main Body Styling */
 
 main {
-  margin-top: 5em; 
-  margin-bottom: 1em; 
-  padding: 0.5rem 0; 
   font-family: 'Shadows Into Light Two', cursive;
+  display:  flex; 
+  width:  100%; 
+  margin: 1rem; 
 }
 
-article, section {
-  margin-top: 1rem; 
-  margin-bottom: 2rem; 
-  padding: 0 1rem; 
-  overflow: hidden;  
+.container-fluid .row {
+  padding: .5em;
 }
 
-.hound-grid {
-  list-style: none; 
+.container-fluid .row > .thumbnail > a,
+.container-fluid .row > .thumbnail > a:hover, 
+.container-fluid .row > .thumbnail > a:focus {
+  text-decoration: none !important; 
+  color: #0E2F32; 
+  text-decoration-line: none; 
 }
 
-.grid-item {
-  width: 50%; 
-  float: left; 
-  padding: 4rem;
-  position: relative;  
+.home-text {
+  font-size: 1.5em; 
+  margin: 1em; 
 }
 
-.grid-item figure {
-  overflow: hidden; 
-  position: relative; 
-  height: 0; 
-  padding-bottom: 68%; 
-  margin-top: 2rem; 
-  -webkit-transition: background .3s ease-in-out;
-  -moz-transition: background .3s ease-in-out;
-  -o-transition: background .3s ease-in-out;
-  -ms-transition: background .3s ease-in-out;
-  transition: background .3s ease-in-out;
-}
-
-.grid-item img {
-  width: 100%; 
-  height: 40vw; 
-  -webkit-transition: all .3s ease-in-out;
-  -moz-transition: all .3s ease-in-out;
-  -o-transition: all .3s ease-in-out;
-  -ms-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
-  position: relative;
-}
-
-.grid-item a {
-  text-align: center;
-  color: #666666;
-}
-
-.grid-item h3 {
-  position: relative;
-  margin-top: -6rem;
-  margin-bottom: 2rem;
-  padding-left: 4rem;
-  text-align: left;
-  color: white; 
-  font-size: 3rem;
-  font-weight: 800; 
-  text-transform: uppercase;
-}
-
-.grid-item:hover figure {
-  background-color: #a9e2e6;
-}
-
-.grid-item:hover img {
-  opacity: 0.2;
-  transform: scale(1.1,1.1);
-}
-
-.grid-item:hover h3 {
-  margin-top: -8rem;
-  margin-bottom: 4rem; 
-  color: #0a2123; 
-  -webkit-transition: all 0.4s ease;
-  -moz-transition: all 0.4s ease;
-  -o-transition: all 0.4s ease;
-  -ms-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-}
-
-.grid-item:hover figcaption {
-  margin-top: -23rem;
-  color: #0a2123;
-  font-size: 2rem;
-  font-weight: 700; 
-  text-align: left;
-  padding-left: 4rem;
-  opacity: 1;
-}
-
-/* Begin Footer Styling
-footer { 
-  background-color: #5CC7D0;
-  color: white; 
-  font-size: 1em;
-  background-image: linear-gradient(#5CC7D0,#32a4ad); 
-  font-family: 'Questrial', sans-serif;
-}
-
-footer a{
-  color: white;
-  font-weight: 300;
-}
-
-footer ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0.5rem;
-}
-
-.contact {
-  float: right; 
-  display: inline-block;
-  margin-right: 5rem; 
-  padding-right: 2rem; 
-  font-size: 1em; 
-  list-style-type: none;
-  }
-
-.contact h4 {
-  color: #48484A;
-  font-weight: 900; 
-}
-
-.emailUs {
-  color: #48484A; 
-}
-.contact a:hover {
-  color: white; 
-}
-
-.social {
-  list-style-type: none; 
-  margin: 0; 
-  padding: .2em; 
-  text-align: center;
-  font-size: 2em;  
-}
-
-.social li {
-  display: inline-block; 
-  color: #48484A; 
-  font-size: em; 
-}
-
-.social li a {
-  text-align: center; 
-  padding: .5rem; 
-  text-decoration: none;  
-  color: #48484A; 
-}
-
-.social a:hover {
-  color: white; 
-}
-
-::-webkit-input-placeholder { /* Chrome */
-  font-size: 1rem;
-}
-:-ms-input-placeholder { /* IE 10+ */
-  font-size: 1rem;
-}
-::-moz-placeholder { /* Firefox 19+ */
-  font-size: 1rem;
-}
-:-moz-placeholder { /* Firefox 4 - 18 */
-  font-size: 1rem;
-}
-
-/* Be3ing About Us Styling */
+/* Begin About Us Styling */
 
 /* About Us Image Formatting */
 #logo {
@@ -261,22 +123,43 @@ footer ul {
   border-color: black; 
   float: left; 
   margin-left: 2rem; 
-  margin-right: 2rem; 
+  margin-right: 2rem;  
 }
 
-.about-us-title {
-  font-size: 5em;  
-  min-width: 3rem;; 
+.about-us-title {  
+  max-width: 100%;
 }
 
 h2.about-us-title {
-  padding-top: 1rem;
+  font-size: 3em;
+  font-weight: 700; 
 }
 
 h2.about-us-sub {
-  font-size: 2.5em;
+  font-size: 2em;
   margin-top: -.25em; 
   color: #48484A; 
+}
+
+@media screen and (max-width: 500px) {
+  .h2 {
+    width: 50%; 
+    font-size: 1em; 
+  }
+}
+
+@media screen and (max-width: 725px) {
+  .h2 {
+    width: 50%; 
+    font-size: 3em; 
+  }
+}
+
+@media screen and (max-width: 1394px) {
+  .h2 {
+    width: 100%; 
+    font-size: 2.75em; 
+  }
 }
 
 p.about-us {
@@ -289,31 +172,30 @@ p.about-us {
   font-size: 1.5em; 
 }
 
-p.about-us:first-letter {
+p.about-us:first-letter { 
   font-size: 200%; 
 }
 
 h3.contact-us {
+  font-family: 'Shadows Into Light Two', cursive;
+  padding-top: .5em; 
   margin-left: .5em; 
-  margin-top: 11em; 
   font-size: 2.5em; 
   font-weight: 900; 
 }
 
-p.contact-us {
+.contact-us {
   font-family: 'Questrial', sans-serif;
-  margin-left: .75em; 
-  float: left;   
-  line-height: 1.3; 
+  margin-left: 1em;   
   clear: both;
   font-size: 1.5em;
 }
 
 .contact-us-form {
   font-family: 'Questrial', sans-serif;
-  width: 50%;
+  max-width: 75%;
   font-size: 1.25em;
-  margin-left: .75em; 
+  margin-left: 1em; 
 }
 
 label {
@@ -324,5 +206,33 @@ button {
   color: black; 
 }
 
+/* Begin About Park Styling */
+.about-park {
+  font-size: 3em; 
+  padding-left: .5em; 
+  font-weight: 900; 
+}
+
+/* Begin Menu Styling */
+
+.img-thumbnail {
+  width: 90%; 
+  padding: .5em; 
+}
+
+.table-headers {
+  font-size: 1.5em; 
+  color: #5CC7D0; 
+  padding-left: 2em;  
+  text-decoration-line: underline; 
+}
+
+.drink-headers {
+  padding-top: .5em; 
+  font-weight: 600;
+  font-size: 1.5em; 
+  font-variant: small-caps; 
+  color: #5cd065; 
+}
 
 
